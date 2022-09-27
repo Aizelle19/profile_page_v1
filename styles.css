@@ -1,0 +1,325 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Kalam", sans-serif;
+  font-size: 1em;
+  text-shadow: 4px 4px 4px #aaa;
+  color: #222;
+  background: linear-gradient(
+    184deg,
+    floralwhite 40%,
+    #5abdf7 70%
+  );
+}
+.hobbies-container {
+  background: linear-gradient(
+   to bottom, 
+    floralwhite 35%,
+    lightskyblue 95%
+  );
+}
+.my-liking-container {
+  background: linear-gradient(
+   to bottom, 
+    floralwhite 35%,
+    #C8EFFF 95%
+  );
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: darkslategray;
+}
+a:hover {
+  color: darkorange;
+
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 2.5%,
+    lightskyblue 5%,
+    floralwhite 10%,
+    lightblue 60%,
+    floralwhite 0%,
+    transparent
+  );
+  font-size: 1.5em;
+  min-height: 10px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  font-family: "Nanum Pen Script", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+  font-family: "Sacramento", sans-serif;
+  font-size: 1em;
+  display: block;
+  margin-right: auto;
+  color: darkslategrey;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav li:hover {
+  color: mediumseagreen;
+  transition: 0.5s;
+  transform: scale(1.3);
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(to bottom, transparent 65%, floralwhite),
+    url("images/top-background-image.jpg");
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  line-height: 1.5;
+}
+
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all 0.5s;
+}
+
+header .profile-image:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.my-liking-container header  {
+  background: linear-gradient(to bottom, transparent 75%, floralwhite),
+    url("images/myliking-top-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hobbies-container header {
+  background: linear-gradient(to bottom, transparent 75%, floralwhite),
+    url("images/hobbies-top-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tag {
+  font-family: "Gochi Hand", sans-serif;
+  text-shadow: -1px 1px 2px limegreen,
+    1px 4px 3px black,
+    1px 5px 0 white,
+    -1px -2px 0 white;
+  background-color: rgba(255, 255, 255, 0.65);
+  color: yellowgreen;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+
+.tag:hover {
+  color: khaki;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.tag.name {
+  font-size: 3em;
+}
+.tag.location {
+  font-size: 2em;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: radial-gradient(circle, transparent, floralwhite);
+  border-radius: 6px;
+  transition: all 0.3s;
+  border: 2px dashed skyblue;
+}
+
+.card:hover {
+  border-color: lightskyblue;
+  border-width: .2em;
+}
+
+.hobbies-container .card {
+  max-width: 760px;
+  background-image: linear-gradient(245deg, transparent 2.5%, floralwhite 99%), url(images/travelling-photo.jpg);
+  border: transparent;
+  text-shadow: 1px 1px .9px #fff;
+}
+
+.my-liking-container .card {
+  max-width: 760px;
+  background-image: linear-gradient(275deg, transparent 2.5%, floralwhite 99%), url(images/favorite-photo.jpg);
+  border: transparent;
+  text-shadow: 1px 1px .9px #fff;
+}
+
+h2 {
+  font-family: "Grape Nuts", sans-serif;
+  font-size: 1.5em;
+}
+ul.list {
+  list-style-type: none;
+  padding: 0;
+}
+ul.list li {
+  margin-bottom: 12px;
+}
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+  background: linear-gradient(to top, transparent 95%, #5abdf7),
+      url("images/bottom-background-image.jpg");
+  background-size: cover;
+}
+
+.my-liking-container footer {
+  background: linear-gradient(to top, transparent 95%, #C8EFFF),
+      url("images/myliking-bottom-background.jpg") no-repeat;
+      background-size: cover;
+}
+
+.hobbies-container footer {
+  background: linear-gradient(to top, transparent 95%, #ADDCF7 98%),
+      url("images/hobbies-bottom-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer .copyright {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: bolder;
+  font-size: 1.2em;
+  text-shadow: 5px 100px 4px white; 
+  top: -8px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: rgb(67, 115, 206);
+  padding: 2px 10px 2px 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+footer .copyright:hover {
+  transition: 1s;
+  transform: scale(1.05);
+  opacity: .09;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  opacity: 0.6;
+  transition: all 0.5s;
+}
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: .09;
+  transform: scale(1.3);
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  .flex {
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    overflow: visible;
+    padding-bottom: 60px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 400px;
+  }
+}
